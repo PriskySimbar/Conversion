@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prisky.site</title>
+    <link rel="stylesheet" href="designs.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">Prisky</div>
+                <div class="julukan">NET.</div>
+            </div>
+            <ul class="navigation">
+                <li class="li-navbar"><a href="Home.html" class="active">Home</a></li>
+                <li class="li-navbar"><a href="">My Projects</a></li>
+                <li class="li-navbar"><a href="">About me</a></li>
+                <li><img src="discord-pfp-red.gif" alt=""></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- end -->
+    <div class="meter-container">
+        <div class="meter-box">
+            <p class="judul">To do list</p>
+            <form action="">
+                <div class="textbox">
+                    <div class="baris col">
+                        <input id="first" name="firstinput" class="form-control w-100" type="text" placeholder="To do list(write ur plans example:i will wash my teeth then i will take a shower.)" aria-label="default input example">
+                    </div>
+                    
+                    <div id="button" class="buttondark"><button type="button" class="btn btn-dark" name="firstinput"
+                            onclick="acc(this.form)">Add to my plan</button>
+                    </div>
+                    <br>
+                    <div id="button" class="buttondark"><button type="button" class="btn btn-dark" name="firstinput"
+                            onclick="deletex(this.form)">Delete All</button>
+                    </div>
+                    <div class="textcenter list-group ">
+                        <p class="samadengan" id="sisa">Your List:</p>
+                        <ul id="list" class="textcenters"></ul>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
